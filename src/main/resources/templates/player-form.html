@@ -1,0 +1,62 @@
+<form action="/players/save" method="POST">
+    <input id="id" type="hidden" name="id" th:value="(${player}!=null ? ${player.id} : '')">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text"
+               class="form-control"
+               id="name"
+               name="name"
+               th:value="(${player}!=null ? ${player.name} : '')"
+               required
+               placeholder="Enter player name">
+    </div>
+    <div class="form-group">
+        <label for="surname">Surname</label>
+        <input type="text"
+               class="form-control"
+               id="surname"
+               name="surname"
+               th:value="(${player} != null ? ${player.surname} : '')"
+               placeholder="Enter player surname">
+    </div>
+    <div class="form-group">
+        <label>Position</label>
+        <select name="position" class="form-control">
+            <option th:if="${player}!=null"
+                    th:selected="${player.position!=null && player.position==position}"
+                    th:each="position : ${positions}"
+                    th:value="${position}"
+                    th:text="${position}"
+            >
+            </option>
+            <option th:if="${player}==null"
+                    th:each="position : ${positions}"
+                    th:value="${position}"
+                    th:text="${position}"
+            >
+            </option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Team</label>
+        <select name="team" class="form-control">
+            <option th:if="${player}!=null"
+                    th:selected="${player.team!=null && player.team==team}"
+                    th:each="team : ${teams}"
+                    th:value="${team.id}"
+                    th:text="${team.name}"
+            >
+            </option>
+            <option th:if="${player}==null"
+                    th:each="team : ${teams}"
+                    th:value="${team.id}"
+                    th:text="${team.name}"
+            >
+            </option>
+        </select>
+    </div>
+
+
+    <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+    <a type="button" class="btn btn-primary" href="/players">Back</a>
+</form>
