@@ -1,0 +1,14 @@
+C:\Users\Dimitar Jovanovski\FINKI\semestar_6\KIII\proekt\football-repository\src\main\java\mk\ukim\finki\kiii\proekt\footballrepository\model\exceptions\InvalidPlayerIdException.java
+C:\Users\Dimitar Jovanovski\FINKI\semestar_6\KIII\proekt\football-repository\src\main\java\mk\ukim\finki\kiii\proekt\footballrepository\service\PlayerService.java
+C:\Users\Dimitar Jovanovski\FINKI\semestar_6\KIII\proekt\football-repository\src\main\java\mk\ukim\finki\kiii\proekt\footballrepository\model\Team.java
+C:\Users\Dimitar Jovanovski\FINKI\semestar_6\KIII\proekt\football-repository\src\main\java\mk\ukim\finki\kiii\proekt\footballrepository\web\controller\TeamController.java
+C:\Users\Dimitar Jovanovski\FINKI\semestar_6\KIII\proekt\football-repository\src\main\java\mk\ukim\finki\kiii\proekt\footballrepository\service\impl\PlayerServiceImpl.java
+C:\Users\Dimitar Jovanovski\FINKI\semestar_6\KIII\proekt\football-repository\src\main\java\mk\ukim\finki\kiii\proekt\footballrepository\repository\jpa\PlayerRepository.java
+C:\Users\Dimitar Jovanovski\FINKI\semestar_6\KIII\proekt\football-repository\src\main\java\mk\ukim\finki\kiii\proekt\footballrepository\service\impl\TeamServiceImpl.java
+C:\Users\Dimitar Jovanovski\FINKI\semestar_6\KIII\proekt\football-repository\src\main\java\mk\ukim\finki\kiii\proekt\footballrepository\web\controller\PlayerController.java
+C:\Users\Dimitar Jovanovski\FINKI\semestar_6\KIII\proekt\football-repository\src\main\java\mk\ukim\finki\kiii\proekt\footballrepository\FootballRepositoryApplication.java
+C:\Users\Dimitar Jovanovski\FINKI\semestar_6\KIII\proekt\football-repository\src\main\java\mk\ukim\finki\kiii\proekt\footballrepository\model\exceptions\InvalidTeamIdException.java
+C:\Users\Dimitar Jovanovski\FINKI\semestar_6\KIII\proekt\football-repository\src\main\java\mk\ukim\finki\kiii\proekt\footballrepository\repository\jpa\TeamRepository.java
+C:\Users\Dimitar Jovanovski\FINKI\semestar_6\KIII\proekt\football-repository\src\main\java\mk\ukim\finki\kiii\proekt\footballrepository\service\TeamService.java
+C:\Users\Dimitar Jovanovski\FINKI\semestar_6\KIII\proekt\football-repository\src\main\java\mk\ukim\finki\kiii\proekt\footballrepository\model\Player.java
+C:\Users\Dimitar Jovanovski\FINKI\semestar_6\KIII\proekt\football-repository\src\main\java\mk\ukim\finki\kiii\proekt\footballrepository\model\enumerations\PlayerPosition.java

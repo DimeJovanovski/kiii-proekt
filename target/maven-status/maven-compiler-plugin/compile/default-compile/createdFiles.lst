@@ -1,0 +1,14 @@
+mk\ukim\finki\kiii\proekt\footballrepository\model\Player.class
+mk\ukim\finki\kiii\proekt\footballrepository\model\enumerations\PlayerPosition.class
+mk\ukim\finki\kiii\proekt\footballrepository\FootballRepositoryApplication.class
+mk\ukim\finki\kiii\proekt\footballrepository\repository\jpa\TeamRepository.class
+mk\ukim\finki\kiii\proekt\footballrepository\service\impl\PlayerServiceImpl.class
+mk\ukim\finki\kiii\proekt\footballrepository\service\PlayerService.class
+mk\ukim\finki\kiii\proekt\footballrepository\service\impl\TeamServiceImpl.class
+mk\ukim\finki\kiii\proekt\footballrepository\model\Team.class
+mk\ukim\finki\kiii\proekt\footballrepository\web\controller\TeamController.class
+mk\ukim\finki\kiii\proekt\footballrepository\model\exceptions\InvalidTeamIdException.class
+mk\ukim\finki\kiii\proekt\footballrepository\web\controller\PlayerController.class
+mk\ukim\finki\kiii\proekt\footballrepository\model\exceptions\InvalidPlayerIdException.class
+mk\ukim\finki\kiii\proekt\footballrepository\service\TeamService.class
+mk\ukim\finki\kiii\proekt\footballrepository\repository\jpa\PlayerRepository.class
