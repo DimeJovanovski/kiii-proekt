@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kiii-proekt-app-configmap
+data:
+  SPRING_DATASOURCE_URL: jdbc:postgresql://kiii-proekt-db-svc:5432/kiii-proekt-db
+  SPRING_DATASOURCE_USERNAME: postgres
+  SPRING_DATASOURCE_PASSWORD: 12345

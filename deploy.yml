@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiii-proekt-deploy
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: football-repository-proekt-app
+      chapter: services
+  revisionHistoryLimit: 5
+  progressDeadlineSeconds: 300
+  minReadySeconds: 10
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 2
+  template:
+    metadata:
+      labels:
+        app: football-repository-proekt-app
+        chapter: services
+    spec:
+      containers:
+      - name: 
+        image: dimitarjovanovski01/kiii-proekt-app:1.0
+        ports:
+        - containerPort: 8080

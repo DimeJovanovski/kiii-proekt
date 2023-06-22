@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kiii-proekt-db-configmap
+data:
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: 12345
+  POSTGRES_DB: kiii-proekt-db
