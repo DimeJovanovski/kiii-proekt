@@ -1,0 +1,161 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: kiii-proekt-pv
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /data/kiii-proekt
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: kiii-proekt-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kiii-proekt-db-configmap
+data:
+  POSTGRES_USER: "postgres"
+  POSTGRES_PASSWORD: "12345"
+  POSTGRES_DB: "kiii-proekt-db"
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kiii-proekt-app-configmap
+data:
+  SPRING_DATASOURCE_URL: "jdbc:postgresql://kiii-proekt-db-svc:5432/kiii-proekt-db"
+  SPRING_DATASOURCE_USERNAME: "postgres"
+  SPRING_DATASOURCE_PASSWORD: "12345"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: kiii-proekt-db-svc
+spec:
+  selector:
+    app: postgres
+  ports:
+    - protocol: TCP
+      port: 5432
+      targetPort: 5432
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: kiii-proekt-appv1-svc
+spec:
+  selector:
+    app: webappv1
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: kiii-proekt-appv2-svc
+spec:
+  selector:
+    app: webappv2
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiii-proekt-db-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: postgres
+  template:
+    metadata:
+      labels:
+        app: postgres
+    spec:
+      containers:
+        - name: postgres-container
+          image: postgres
+          ports:
+            - containerPort: 5432
+          envFrom:
+            - configMapRef:
+                name: kiii-proekt-db-configmap
+          volumeMounts:
+            - name: postgres-volume
+              mountPath: /var/lib/postgresql/data
+      volumes:
+        - name: postgres-volume
+          persistentVolumeClaim:
+            claimName: kiii-proekt-pvc
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiii-proekt-appv1-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: webappv1
+  template:
+    metadata:
+      labels:
+        app: webappv1
+    spec:
+      containers:
+        - name: webappv1-container
+          image: dimitarjovanovski01/kiii-proekt-app:1.0
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: kiii-proekt-app-configmap
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiii-proekt-appv2-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: webappv2
+  template:
+    metadata:
+      labels:
+        app: webappv2
+    spec:
+      containers:
+        - name: webappv2-container
+          image: dimitarjovanovski01/kiii-proekt-app:2.0
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: kiii-proekt-app-configmap

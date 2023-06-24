@@ -5,20 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee61d98c-c9cd-491b-862a-b54107da099e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/img/logo.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/master-template.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/master-template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/players.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/players.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/teams.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/teams.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/img/logo.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/master-template.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/master-template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/players.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/players.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/teams.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/teams.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/football-repository-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/football-repository-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/football-repository-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/football-repository-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-mk.ukim.finki.kiii.proekt.footballrepository.FootballRepositoryApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-mk.ukim.finki.kiii.proekt.footballrepository.FootballRepositoryApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/mk.ukim.finki.kiii.proekt.footballrepository.FootballRepositoryApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/mk.ukim.finki.kiii.proekt.footballrepository.FootballRepositoryApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/all.yml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/regular-dep.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,31 +43,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Dimitar Jovanovski/FINKI/semestar_6/KIII/proekt/football-repository/k8s",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "38fdc1ab5aab8d21e4b9bc1a41240108",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dimitar Jovanovski/FINKI/semestar_6/KIII/proekt/football-repository/k8s&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;38fdc1ab5aab8d21e4b9bc1a41240108&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Dimitar Jovanovski\FINKI\semestar_6\KIII\proekt\football-repository\k8s" />
@@ -124,7 +113,8 @@
       <workItem from="1687259035251" duration="419000" />
       <workItem from="1687285333427" duration="2621000" />
       <workItem from="1687336952838" duration="3450000" />
-      <workItem from="1687433824351" duration="19476000" />
+      <workItem from="1687433824351" duration="32568000" />
+      <workItem from="1687601798703" duration="3739000" />
     </task>
     <servers />
   </component>
