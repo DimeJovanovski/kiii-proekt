@@ -5,9 +5,9 @@ metadata:
 spec:
     stripPrefix:
         forceSlash: false
-        prefixes:
-            - /v1
-            - /v2
+#        prefixes:
+#            - /v1
+#            - /v2
 
 ---
 
@@ -20,16 +20,36 @@ metadata:
         traefik.ingress.kubernetes.io/router.middlewares: "default-kiii-proekt-all@kubernetescrd"
 spec:
     rules:
-        - http:
+#        - http:
+#              paths:
+#                  - path: /v1
+#                    pathType: Prefix
+#                    backend:
+#                        service:
+#                            name: kiii-proekt-appv1-svc
+#                            port:
+#                                number: 80
+#                  - path: /v2
+#                    pathType: Prefix
+#                    backend:
+#                        service:
+#                            name: kiii-proekt-appv2-svc
+#                            port:
+#                                number: 80
+        - host: kiii.proekt.v1
+          http:
               paths:
-                  - path: /v1
+                  - path: /
                     pathType: Prefix
                     backend:
                         service:
                             name: kiii-proekt-appv1-svc
                             port:
                                 number: 80
-                  - path: /v2
+        - host: kiii.proekt.v2
+          http:
+              paths:
+                  - path: /
                     pathType: Prefix
                     backend:
                         service:
