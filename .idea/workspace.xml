@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ee61d98c-c9cd-491b-862a-b54107da099e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8s/k3ing-complex.yml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/k3ing-complex.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +113,7 @@
       <workItem from="1687336952838" duration="3450000" />
       <workItem from="1687433824351" duration="32568000" />
       <workItem from="1687601798703" duration="4635000" />
-      <workItem from="1687789548280" duration="8428000" />
+      <workItem from="1687789548280" duration="9707000" />
     </task>
     <servers />
   </component>
