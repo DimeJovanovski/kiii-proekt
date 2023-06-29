@@ -6,6 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="ee61d98c-c9cd-491b-862a-b54107da099e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/configmap-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/components/configmap-app.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/configmap-db.yml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/components/configmap-db.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/deploy-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/components/deploy-app.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/deploy-db.yml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/components/deploy-db.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/pv.yml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/components/pv.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/pvc.yml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/components/pvc.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/svc-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/components/svc-app.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/svc-db.yml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/components/svc-db.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +59,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dimitar Jovanovski/FINKI/semestar_6/KIII/proekt/football-repository/k8s&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dimitar Jovanovski/FINKI/semestar_6/KIII/proekt/football-repository/k8s/namespaced&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -68,11 +76,13 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dimitar Jovanovski\FINKI\semestar_6\KIII\proekt\football-repository\k8s\namespaced" />
       <recent name="C:\Users\Dimitar Jovanovski\FINKI\semestar_6\KIII\proekt\football-repository\k8s" />
       <recent name="C:\Users\Dimitar Jovanovski\FINKI\semestar_6\KIII\proekt\football-repository\src\main\resources\templates" />
       <recent name="C:\Users\Dimitar Jovanovski\FINKI\semestar_6\KIII\proekt\football-repository\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dimitar Jovanovski\FINKI\semestar_6\KIII\proekt\football-repository\k8s\components" />
       <recent name="C:\Users\Dimitar Jovanovski\FINKI\semestar_6\KIII\proekt\football-repository\src\main\resources\templates\fragments\img" />
       <recent name="C:\Users\Dimitar Jovanovski\FINKI\semestar_6\KIII\proekt\football-repository\src\main\resources\templates\fragments" />
     </key>
@@ -113,7 +123,11 @@
       <workItem from="1687336952838" duration="3450000" />
       <workItem from="1687433824351" duration="32568000" />
       <workItem from="1687601798703" duration="4635000" />
-      <workItem from="1687789548280" duration="9707000" />
+      <workItem from="1687789548280" duration="11435000" />
+      <workItem from="1687894312149" duration="4649000" />
+      <workItem from="1688048782848" duration="789000" />
+      <workItem from="1688059641492" duration="182000" />
+      <workItem from="1688059830233" duration="105000" />
     </task>
     <servers />
   </component>
